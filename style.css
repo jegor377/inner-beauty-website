@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#header-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 10px;
+}
+
+#brand {
+	font-family: 'Allison', cursive;
+	text-decoration: none;
+	color: black;
+	font-size: 72px;
+	font-weight: 600;
+}
+
+#nav-actions {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin-top: 30px;
+}
+
+#nav-actions a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	transition: color 0.5s;
+	padding: 20px;
+}
+
+#nav-actions a:hover {
+	color: #C68F87;
+}
+
+header {
+	flex-grow: 1;
+	background-image: url('imgs/girl_being_massaged.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+}
+
+#invitation-text {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+	margin-left: 50px;
+}
+
+#invitation-text h1 {
+	color: white;
+	font-size: 58px;
+	text-shadow: 0px 0px 15px grey;
+}
+
+#invitation-text a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
