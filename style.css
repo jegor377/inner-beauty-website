@@ -1,9 +1,15 @@
+:root {
+	--primary-color: white;
+	--secondary-color: black;
+	--accent-color: #e6a69c; /*#C68F87;*/
+}
+
 body {
 	margin: 0;
 	box-sizing: border-box;
 }
 
-#header-container {
+header {
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -20,7 +26,7 @@ nav {
 #brand {
 	font-family: 'Allison', cursive;
 	text-decoration: none;
-	color: black;
+	color: var(--secondary-color);
 	font-size: 72px;
 	font-weight: 600;
 }
@@ -34,18 +40,18 @@ nav {
 
 #nav-actions a {
 	text-decoration: none;
-	color: black;
+	color: var(--secondary-color);
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	transition: color 0.5s;
+	transition: color 0.3s;
 	padding: 20px;
 }
 
 #nav-actions a:hover {
-	color: #C68F87;
+	color: var(--accent-color);
 }
 
-header {
+.invitation-container {
 	flex-grow: 1;
 	background-image: url('imgs/girl_being_massaged.jpg');
 	background-position: center;
@@ -64,13 +70,29 @@ header {
 }
 
 #invitation-text h1 {
-	color: white;
+	color: var(--primary-color);
 	font-size: 58px;
-	text-shadow: 0px 0px 15px grey;
+	text-shadow: 0px 0px 8px grey;
+	font-weight: 200;
+}
+
+#invitation-text h1 span {
+	font-weight: 400;
 }
 
 #invitation-text a {
 	text-decoration: none;
-	color: white;
+	color: var(--primary-color);
 	text-transform: uppercase;
+	padding: 20px;
+	font-weight: 400;
+	font-size: 20px;
+	border: 2px solid var(--primary-color);
+	transition-duration: 0.3s;
+	background-color: #22222222;
+}
+
+#invitation-text a:hover {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
 }
