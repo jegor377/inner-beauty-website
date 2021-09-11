@@ -1,7 +1,20 @@
 :root {
 	--primary-color: white;
-	--secondary-color: black;
-	--accent-color: #e6a69c; /*#C68F87;*/
+	--secondary-color: #222;
+	--accent-color: #e6a69c;
+
+	--primary-text-color: white;
+	--secondary-text-color: black;
+
+	--brand-font: 'Allison', cursive;
+	--primary-font: 'Montserrat', sans-serif;
+	--secondary-font: 'Nunito', sans-serif;
+
+	--container-padding: 50px;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -24,11 +37,12 @@ nav {
 }
 
 #brand {
-	font-family: 'Allison', cursive;
+	font-family: var(--brand-font);
 	text-decoration: none;
-	color: var(--secondary-color);
+	color: var(--secondary-text-color);
 	font-size: 72px;
 	font-weight: 600;
+	margin: 20px 0;
 }
 
 #nav-actions {
@@ -40,8 +54,8 @@ nav {
 
 #nav-actions a {
 	text-decoration: none;
-	color: var(--secondary-color);
-	font-family: 'Montserrat', sans-serif;
+	color: var(--secondary-text-color);
+	font-family: var(--primary-font);
 	text-transform: uppercase;
 	transition: color 0.3s;
 	padding: 20px;
@@ -53,24 +67,25 @@ nav {
 
 .invitation-container {
 	flex-grow: 1;
-	background-image: url('imgs/girl_being_massaged.jpg');
-	background-position: center;
+	background-image: url('imgs/img1.jpg');
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	font-family: 'Nunito', sans-serif;
+	font-family: var(--secondary-font);
 	position: relative;
+	overflow: hidden;
 }
 
 #invitation-text {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-70%);
 	padding: 50px;
 	margin-left: 50px;
 }
 
 #invitation-text h1 {
-	color: var(--primary-color);
+	color: var(--primary-text-color);
 	font-size: 58px;
 	text-shadow: 0px 0px 8px grey;
 	font-weight: 200;
@@ -82,12 +97,12 @@ nav {
 
 #invitation-text a {
 	text-decoration: none;
-	color: var(--primary-color);
+	color: var(--primary-text-color);
 	text-transform: uppercase;
 	padding: 20px;
 	font-weight: 400;
 	font-size: 20px;
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--primary-text-color);
 	transition-duration: 0.3s;
 	background-color: #22222222;
 }
@@ -95,4 +110,103 @@ nav {
 #invitation-text a:hover {
 	background-color: var(--accent-color);
 	border-color: var(--accent-color);
+}
+
+.container {
+	padding: var(--container-padding);
+}
+
+.primary-bg {
+	background-color: var(--primary-color);
+	color: var(--secondary-text-color);
+}
+
+.secondary-bg {
+	background-color: var(--secondary-color);
+	color: var(--primary-text-color);
+}
+
+hr {
+	width: 50px;
+}
+
+.primary-bg hr {
+	color: var(--secondary-text-color);
+}
+
+.secondary-bg hr {
+	color: var(--primary-text-color);
+}
+
+article h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: var(--secondary-font);
+	font-weight: 300;
+	font-size: 40px;
+	color: var(--accent-color);
+}
+
+#about {
+	font-family: var(--primary-font);
+}
+
+#about p {
+	font-size: 18px;
+	text-align: justify;
+}
+
+#services {
+	overflow-x: hidden;
+}
+
+#services img {
+	width: 100%;
+}
+
+#services p {
+	font-family: var(--primary-font);
+	text-align: justify;
+	padding: 10px 40px;
+	font-size: 20px;
+}
+
+#services section {
+	padding: 30px 0px;
+}
+
+.service-left {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.service-right {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+#gallery {
+	padding: var(--container-padding) 0 0 0;
+	overflow-x: hidden;
+}
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	margin-top: 30px;
+}
+
+.gallery-grid img {
+	object-fit: cover;
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+
+footer {
+	font-family: var(--primary-font);
+	background-color: var(--secondary-text-color);
+	text-align: center;
+	padding: 20px;
+	color: var(--primary-text-color);
+	font-size: 14px;
 }
