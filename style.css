@@ -73,7 +73,7 @@ p {
 
 .invitation-container {
 	flex-grow: 1;
-	background-image: url('./imgs/img1.jpg');
+	background-image: url('./imgs/img1.webp');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
