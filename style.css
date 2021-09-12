@@ -288,8 +288,10 @@ footer {
 		background-color: #eee;
 	}
 
-	#nav-links li {
-		padding: 20px;
+	#nav-links a {
+		display: block;
+		width: 100%;
+		overflow-y: scroll;
 	}
 
 	.nav-links-on-shown {
