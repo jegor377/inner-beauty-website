@@ -1,1 +1,4 @@
-AOS.init()
+window.onload = () => {
+	AOS.init()
+	initNavigation()
+}

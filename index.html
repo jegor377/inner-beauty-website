@@ -11,6 +11,7 @@
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+	<link rel="stylesheet" type="text/css" href="./nav/nav.css">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
@@ -19,13 +20,18 @@
 			<a id="brand" href="#">
 				Inner Beauty
 			</a>
-			<ul id="nav-actions">
+			<ul id="nav-links" class="nav-links-on-hidden">
 				<li><a href="#">Start</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+			<div id="hamburger-menu-btn">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
 		</nav>
 		<div class="invitation-container">
 			<div id="invitation-text">
@@ -72,22 +78,36 @@
 			<hr>
 			<section class="gallery-grid">
 				<img src="./imgs/img5.jpg" alt="back massage" data-aos="zoom-in">
-				<img src="./imgs/img6.jpg" alt="head massage" data-aos="zoom-in" data-aos-delay="100">
-				<img src="./imgs/img7.jpg" alt="neck massage" data-aos="zoom-in" data-aos-delay="200">
-				<img src="./imgs/img8.jpg" alt="hand massage" data-aos="zoom-in" data-aos-delay="300">
-				<img src="./imgs/img9.jpg" alt="stomach massage" data-aos="zoom-in" data-aos-delay="100">
-				<img src="./imgs/img10.jpg" alt="woman resting" data-aos="zoom-in" data-aos-delay="200">
-				<img src="./imgs/img11.jpg" data-aos="zoom-in" data-aos-delay="300">
-				<img src="./imgs/img12.jpg" alt="a woman in sauna" data-aos="zoom-in" data-aos-delay="400">
-				<img src="./imgs/img13.jpg" alt="a couple chilling" data-aos="zoom-in" data-aos-delay="100">
-				<img src="./imgs/img14.jpg" alt="woman with cucumbers on her eyes" data-aos="zoom-in" data-aos-delay="200">
-				<img src="./imgs/img15.jpg" alt="a doctor putting on a facemask" data-aos="zoom-in" data-aos-delay="300">
-				<img src="./imgs/img16.jpg" alt="drawing facemask on face" data-aos="zoom-in" data-aos-delay="400">
+				<img src="./imgs/img6.jpg" alt="head massage" data-aos="zoom-in">
+				<img src="./imgs/img7.jpg" alt="neck massage" data-aos="zoom-in">
+				<img src="./imgs/img8.jpg" alt="hand massage" data-aos="zoom-in">
+				<img src="./imgs/img9.jpg" alt="stomach massage" data-aos="zoom-in">
+				<img src="./imgs/img10.jpg" alt="woman resting" data-aos="zoom-in">
+				<img src="./imgs/img11.jpg" data-aos="zoom-in">
+				<img src="./imgs/img12.jpg" alt="a woman in sauna" data-aos="zoom-in">
+				<img src="./imgs/img13.jpg" alt="a couple chilling" data-aos="zoom-in">
+				<img src="./imgs/img14.jpg" alt="woman with cucumbers on her eyes" data-aos="zoom-in">
+				<img src="./imgs/img15.jpg" alt="a doctor putting on a facemask" data-aos="zoom-in">
+				<img src="./imgs/img16.jpg" alt="drawing facemask on face" data-aos="zoom-in">
 			</section>
 		</article>
 		<article id="contact" class="container primary-bg">
 			<h1 data-aos="fade-up">Contact</h1>
 			<hr>
+			<section class="contact-grid">
+				<div data-aos="zoom-in">
+					<h2>Address</h2>
+					<p>Armi Poznań Alley, 61-001 Poznań</p>
+					<h2>Phone number</h2>
+					<p>+48 XXX XXX XXX</p>
+					<h2>E-mail</h2>
+					<a href="mailto: email@email.com">email@email.com</a>
+					<h2>Work schedule</h2>
+					Monday - Friday<br>
+					9 am. - 5 pm.
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77902.88351520867!2d16.86286377868078!3d52.39824623109695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b504332e01f%3A0xaa0e3d7fbb10394f!2sPark%20Cytadela%20w%20Poznaniu!5e0!3m2!1spl!2spl!4v1631460729402!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</section>
 		</article>
 	</main>
 	<footer>
@@ -95,6 +115,7 @@
 	</footer>
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="./nav/nav.js"></script>
 	<script type="text/javascript" src="./app.js"></script>
 </body>
 </html>
