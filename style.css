@@ -79,6 +79,7 @@ p {
 	background-size: cover;
 	font-family: var(--secondary-font);
 	position: relative;
+	overflow: hidden;
 }
 
 #invitation-text {
