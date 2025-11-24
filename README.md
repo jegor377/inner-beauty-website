@@ -1,2 +1,3 @@
-# inner-beauty-website
-Demo website to showoff of my abilities in HTML, CSS and JS.
+# Inner Beauty Website
+
+An Inner Beauty business card website. It was made for fun.
